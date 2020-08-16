@@ -20,6 +20,12 @@ function reducer(state, action){
     console.log(action);
 
     switch (action.type){
+        case 'SET_USER':
+            return {
+                ...state,
+                user: action.user
+            };
+            break;
         case 'ADD_TO_BASKET':
             //Logic for adding item to basket
             return {
